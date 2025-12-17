@@ -1,0 +1,28 @@
+[package]
+name = "macro-recorder"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rfd = "0.14"
+
+# Global input capture
+rdev = "0.5"
+
+# Input playback
+enigo = "0.2"
+
+# Tray + PNG decode
+tray-icon = "0.13"
+
+muda = "0.12"
+image = "0.25"
+
+eframe = "0.29"
+egui = "0.29"
+
+[build-dependencies]
+winres = "0.1"
