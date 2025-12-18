@@ -1,0 +1,35 @@
+name: Windows EXE Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  windows-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Build release EXE
+        run: cargo build --release
+
+      - name: Verify build output
+        run: |
+          echo "Built files:"
+          dir target\release
+
+      - name: Create GitHub Release and upload EXE
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Yanki Recorder ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          files: |
+            target/release/*.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
