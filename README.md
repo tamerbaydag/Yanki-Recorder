@@ -17,7 +17,7 @@ cargo build --release
 ```
 
 ## 📦 Release
-- [v1.0.0 – Windows](https://github.com/tamerbaydag/Yanki-Recorder/releases/tag/v1.0.0-windows)
+- [v1.0.0 – Windows](https://github.com/tamerbaydag/Yanki-Recorder/releases/download/v1.0.0/Yanki.Recorder.v1.0.0.exe)
 
 ## 📝 Değişiklikler
 
