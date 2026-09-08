@@ -1,5 +1,7 @@
 ﻿# 🎛️ Yankı – Macro Recorder
 
+**Version: 1.0.0**
+
 Lightweight Windows macro recorder to capture & replay keyboard and mouse actions.
 
 ## ✨ Features
@@ -12,3 +14,14 @@ Lightweight Windows macro recorder to capture & replay keyboard and mouse action
 ## 🛠 Build
 ```bash
 cargo build --release
+```
+
+## 📦 Release
+- [v1.0.0 – Windows](https://github.com/tamerbaydag/Yanki-Recorder/releases/tag/v1.0.0-windows)
+
+## 📝 Değişiklikler
+
+### v1.0.0 (2026-09-08)
+- İlk resmi Windows release
+- `build.bat` Windows derleme scripti eklendi
+- Sürüm 1.0.0'a yükseltildi

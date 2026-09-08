@@ -277,7 +277,7 @@ impl eframe::App for App {
                 .collapsible(false)
                 .show(ctx, |ui| {
                     ui.heading("Yankı –  Recorder");
-                    ui.label("Version: 0.2.0");
+                    ui.label("Version: 1.0.0");
                     ui.separator();
 
                     ui.label(
